@@ -10,6 +10,7 @@
         <RepositoryType>Git</RepositoryType>
         <RepositoryUrl>https://github.com/colin-chang/Hystrix</RepositoryUrl>
         <PackageTags>Hystrix Polly AspectCore.Core Exception Fallback CircuitBreaker</PackageTags>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
