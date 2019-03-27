@@ -26,8 +26,8 @@ public async Task<string> RetryTestFallBackAsync(string name)
 ```
 
 We provide 2 samples to show how to use this in Console and Asp.Net Core.
-* [Console Sample](https://github.com/colin-chang/Hystrix/tree/master/ColinChang.HystrixCommand.ConsoleSample)
-* [Asp.Net Core Sample](https://github.com/colin-chang/Hystrix/tree/master/ColinChang.HystrixCommand.WebSample)
+* [Console Sample](https://github.com/colin-chang/Hystrix/tree/master/ColinChang.Hystrix.ConsoleSample)
+* [Asp.Net Core Sample](https://github.com/colin-chang/Hystrix/tree/master/ColinChang.Hystrix.WebSample)
 
 
 > Advanced
