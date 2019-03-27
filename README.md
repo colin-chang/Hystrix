@@ -5,6 +5,15 @@ A light AOP framework that allows you to use `Polly` to handle exceptions with s
 * Used as Attribute conveniently.
 * Class must be `public` and method must be `virtual`. 
 
+**Nuget**
+```sh
+# Package Manager
+Install-Package ColinChang.Hystrix
+
+# .NET CLI
+dotnet add package ColinChang.Hystrix
+```
+
 Sample:
 
 ```csharp
@@ -30,7 +39,7 @@ We provide 2 samples to show how to use this in Console and Asp.Net Core.
 * [Asp.Net Core Sample](https://github.com/colin-chang/Hystrix/tree/master/ColinChang.Hystrix.WebSample)
 
 
-> Advanced
+**Advanced**
 
 The link below explain its theory and how it works.
 
