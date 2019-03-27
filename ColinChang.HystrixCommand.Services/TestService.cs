@@ -7,7 +7,7 @@ namespace ColinChang.HystrixCommand.Services
     public class TestService : ITestService
     {
         [HystrixCommand(nameof(RetryTestFallBackAsync), MaxRetryTimes = 3, EnableCircuitBreaker = true)]
-        public virtual async Task<string> RetryTestAsync(string str) //需要是虚方法
+        public virtual async Task<string> RetryTestAsync(string str)//It must be virtual method
         {
             Console.WriteLine(nameof(RetryTestAsync));
             str.ToString();
