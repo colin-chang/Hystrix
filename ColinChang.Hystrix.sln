@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.HystrixCommand", "ColinChang.HystrixCommand\ColinChang.HystrixCommand.csproj", "{7E8B2081-FC62-49F3-ADE0-416D52A9470F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.Hystrix", "ColinChang.Hystrix\ColinChang.Hystrix.csproj", "{7E8B2081-FC62-49F3-ADE0-416D52A9470F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.HystrixCommand.ConsoleSample", "ColinChang.HystrixCommand.ConsoleSample\ColinChang.HystrixCommand.ConsoleSample.csproj", "{8D751086-F184-4DA6-8AE2-B163B17A47DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.Hystrix.ConsoleSample", "ColinChang.Hystrix.ConsoleSample\ColinChang.Hystrix.ConsoleSample.csproj", "{8D751086-F184-4DA6-8AE2-B163B17A47DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.HystrixCommand.WebSample", "ColinChang.HystrixCommand.WebSample\ColinChang.HystrixCommand.WebSample.csproj", "{930EEF13-8C53-422D-B18D-0F69853F25B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.Hystrix.WebSample", "ColinChang.Hystrix.WebSample\ColinChang.Hystrix.WebSample.csproj", "{930EEF13-8C53-422D-B18D-0F69853F25B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.HystrixCommand.Services", "ColinChang.HystrixCommand.Services\ColinChang.HystrixCommand.Services.csproj", "{30D45F3D-4631-4ECF-B9F8-E94EDA574D52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColinChang.Hystrix.Services", "ColinChang.Hystrix.Services\ColinChang.Hystrix.Services.csproj", "{30D45F3D-4631-4ECF-B9F8-E94EDA574D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

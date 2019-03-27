@@ -3,10 +3,10 @@ using System.Resources;
 using System.Threading.Tasks;
 using AspectCore.DynamicProxy;
 using AspectCore.Extensions.DependencyInjection;
-using ColinChang.HystrixCommand.Services;
+using ColinChang.Hystrix.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ColinChang.HystrixCommand.ConsoleSample
+namespace ColinChang.Hystrix.ConsoleSample
 {
     class Program
     {

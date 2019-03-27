@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace ColinChang.HystrixCommand.Services
+namespace ColinChang.Hystrix.Services
 {
     public interface ITestService
     {

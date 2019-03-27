@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ColinChang.HystrixCommand.Services\ColinChang.HystrixCommand.Services.csproj" />
+      <ProjectReference Include="..\ColinChang.Hystrix.Services\ColinChang.Hystrix.Services.csproj" />
     </ItemGroup>
 
 </Project>

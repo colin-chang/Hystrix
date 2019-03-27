@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace ColinChang.HystrixCommand.Services
+namespace ColinChang.Hystrix.Services
 {
     //需要public类
     public class TestService : ITestService
     {
-        [HystrixCommand(nameof(RetryTestFallBackAsync), MaxRetryTimes = 3, EnableCircuitBreaker = true)]
+        [Hystrix(nameof(RetryTestFallBackAsync), MaxRetryTimes = 3, EnableCircuitBreaker = true)]
         public virtual async Task<string> RetryTestAsync(string str)//It must be virtual method
         {
             Console.WriteLine(nameof(RetryTestAsync));
@@ -23,7 +23,7 @@ namespace ColinChang.HystrixCommand.Services
         }
 
 
-        [HystrixCommand(nameof(FallbackTestFallback), EnableCircuitBreaker = true)]
+        [Hystrix(nameof(FallbackTestFallback), EnableCircuitBreaker = true)]
         public virtual int FallbackTest(int i, int j)
         {
             string s = null;
@@ -37,7 +37,7 @@ namespace ColinChang.HystrixCommand.Services
             return 0;
         }
 
-        [HystrixCommand(nameof(TimeoutTestFallbackAsync), TimeOut = 1000)]
+        [Hystrix(nameof(TimeoutTestFallbackAsync), TimeOut = 1000)]
         public virtual async Task TimeoutTestAsync(int i)
         {
             Console.WriteLine("Test" + i);

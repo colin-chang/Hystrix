@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ColinChang.HystrixCommand.Services;
+using ColinChang.Hystrix.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ColinChang.HystrixCommand.WebSample.Controllers
+namespace ColinChang.Hystrix.WebSample.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

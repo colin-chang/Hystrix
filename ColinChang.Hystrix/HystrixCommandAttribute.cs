@@ -6,10 +6,10 @@ using AspectCore.DynamicProxy;
 using Microsoft.Extensions.Logging;
 using Polly;
 
-namespace ColinChang.HystrixCommand
+namespace ColinChang.Hystrix
 {
     [AttributeUsage(AttributeTargets.Method)]
-    public class HystrixCommandAttribute : AbstractInterceptorAttribute
+    public class HystrixAttribute : AbstractInterceptorAttribute
     {
         public string FallBackMethod { get; set; }
 
@@ -49,7 +49,7 @@ namespace ColinChang.HystrixCommand
             = new Microsoft.Extensions.Caching.Memory.MemoryCache(
                 new Microsoft.Extensions.Caching.Memory.MemoryCacheOptions());
 
-        public HystrixCommandAttribute(string fallBackMethod)
+        public HystrixAttribute(string fallBackMethod)
         {
             FallBackMethod = fallBackMethod;
         }

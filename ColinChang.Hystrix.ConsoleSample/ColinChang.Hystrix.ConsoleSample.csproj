@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="1.2.0" />
+        <ProjectReference Include="..\ColinChang.Hystrix.Services\ColinChang.Hystrix.Services.csproj" />
+        <ProjectReference Include="..\ColinChang.Hystrix\ColinChang.Hystrix.csproj" />
+    </ItemGroup>
+
+</Project>

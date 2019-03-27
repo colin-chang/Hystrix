@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspectCore.Extensions.DependencyInjection;
-using ColinChang.HystrixCommand.Services;
+using ColinChang.Hystrix.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace ColinChang.HystrixCommand.WebSample
+namespace ColinChang.Hystrix.WebSample
 {
     public class Startup
     {
