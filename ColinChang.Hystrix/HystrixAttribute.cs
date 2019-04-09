@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Reflection;
 using System.Threading.Tasks;
 using AspectCore.DynamicProxy;
+using AspectCore.Injector;
 using Microsoft.Extensions.Logging;
 using Polly;
 
@@ -39,7 +40,8 @@ namespace ColinChang.Hystrix
         /// </summary>
         public int CacheTtl { get; set; } = 0;
 
-        public ILogger Logger { get; set; } = null;
+        [FromContainer]
+        public ILogger Logger { get; set; }
 
 
         private static readonly ConcurrentDictionary<MethodInfo, AsyncPolicy> policies =

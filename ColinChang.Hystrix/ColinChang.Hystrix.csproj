@@ -5,12 +5,15 @@
         <Authors>Colin Chang</Authors>
         <Description>A light AOP framework that allows you to use Polly to handle exceptions with some policies like circuit break or fallback and so on of your .net core application.It's like Hystrix from Java Platform.</Description>
         <Copyright>https://colin-chang.site/</Copyright>
-        <PackageLicenseUrl>https://raw.githubusercontent.com/colin-chang/Hystrix/master/LICENSE</PackageLicenseUrl>
+        <PackageLicenseUrl></PackageLicenseUrl>
         <PackageProjectUrl>https://github.com/colin-chang/Hystrix</PackageProjectUrl>
         <RepositoryType>Git</RepositoryType>
         <RepositoryUrl>https://github.com/colin-chang/Hystrix</RepositoryUrl>
         <PackageTags>Hystrix Polly AspectCore.Core Exception Fallback CircuitBreaker</PackageTags>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
+        <Owners>Colin Chang</Owners>
+        <PackageIconUrl>https://raw.githubusercontent.com/colin-chang/Hystrix/master/logo.ico</PackageIconUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,5 +21,12 @@
         <PackageReference Include="Polly" Version="7.0.3" />
         <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.2.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\..\FFmpegHelper\LICENSE">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
     </ItemGroup>
 </Project>
