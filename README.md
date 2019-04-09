@@ -1,5 +1,5 @@
-# HystrixCommand
-A light AOP framework that allows you to use `Polly` to handle exceptions with some policies like circuit break or fallback and so on  of your .net core application.It's like Hystrix from Java Platform.
+# Hystrix
+This is a light AOP framework that allows you to use `Polly` to handle exceptions with some policies like circuit break or fallback and so on  of your .net core application.It's like Hystrix from Java Platform.
 
 * Based on `Polly` and `AspectCore.Core`.
 * Used as Attribute conveniently.
@@ -17,7 +17,7 @@ dotnet add package ColinChang.Hystrix
 Sample:
 
 ```csharp
-[HystrixCommand(nameof(RetryTestFallBackAsync), MaxRetryTimes = 3, EnableCircuitBreaker = true)]
+[Hystrix(nameof(RetryTestFallBackAsync), MaxRetryTimes = 3, EnableCircuitBreaker = true)]
 public virtual async Task<string> RetryTestAsync(string str)//It must be virtual method
 {
     Console.WriteLine(nameof(RetryTestAsync));
