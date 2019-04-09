@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspectCore.Extensions.DependencyInjection;
+using AspectCore.Injector;
 using ColinChang.Hystrix.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +30,8 @@ namespace ColinChang.Hystrix.WebSample
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSingleton<ITestService, TestService>(); //注册"熔断处理"过的安全服务
+            //services.ToServiceContainer().Build();
+
             return services.BuildAspectInjectorProvider(); //让aspectcore接管DI
         }
 

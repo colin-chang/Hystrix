@@ -40,8 +40,8 @@ namespace ColinChang.Hystrix
         /// </summary>
         public int CacheTtl { get; set; } = 0;
 
-        [FromContainer]
-        public ILogger Logger { get; set; }
+        [FromContainer] 
+        public ILogger<HystrixAttribute> Logger { get; set; }
 
 
         private static readonly ConcurrentDictionary<MethodInfo, AsyncPolicy> policies =
