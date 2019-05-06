@@ -5,7 +5,7 @@ This is a light AOP framework that allows you to use `Polly` to handle exception
 * Used as Attribute conveniently.
 * Class must be `public` and method must be `virtual`. 
 
-**Nuget**
+**[Nuget](https://www.nuget.org/packages/ColinChang.Hystrix/)**
 ```sh
 # Package Manager
 Install-Package ColinChang.Hystrix
