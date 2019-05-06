@@ -10,7 +10,7 @@ namespace ColinChang.Hystrix
     public static class ServiceCollectionExtension
     {
         // 注册"熔断安全"服务
-        public static void RegisterAssemblyTypes(this IServiceCollection services, Assembly assembly, bool hystrixOnly = true)
+        public static IServiceCollection RegisterAssemblyTypes(this IServiceCollection services, Assembly assembly, bool hystrixOnly = true)
         {
             foreach (var type in assembly.GetExportedTypes())
             {
@@ -30,6 +30,7 @@ namespace ColinChang.Hystrix
 
                 services.AddSingleton(interfaceType, type);
             }
+            return services;
         }
     }
 }
